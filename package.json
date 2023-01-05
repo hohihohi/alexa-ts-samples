@@ -2,7 +2,8 @@
   "scripts": {
     "commit": "cz",
     "fix:prettier": "prettier --write 'src/**/*.{js,ts,json}'",
-    "lint:prettier": "prettier --check 'src/**/*.{js,ts,json}'"
+    "lint:prettier": "prettier --check 'src/**/*.{js,ts,json}'",
+    "build": "tsc"
   },
   "devDependencies": {
     "@tsconfig/recommended": "^1.0.1",
