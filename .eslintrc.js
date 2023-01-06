@@ -1,11 +1,13 @@
 module.exports = {
 	'env': {
 		'browser': true,
-		'es2021': true
+		'es2021': true,
+    'jest/globals': true
 	},
 	'extends': [
 		'eslint:recommended',
-		'plugin:@typescript-eslint/recommended'
+		'plugin:@typescript-eslint/recommended',
+    'plugin:jest/recommended'
 	],
 	'overrides': [
 	],
@@ -15,7 +17,8 @@ module.exports = {
 		'sourceType': 'module'
 	},
 	'plugins': [
-		'@typescript-eslint'
+		'@typescript-eslint',
+    'jest'
 	],
 	'rules': {
 		'indent': [
