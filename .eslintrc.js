@@ -21,10 +21,6 @@ module.exports = {
     'jest'
 	],
 	'rules': {
-		'indent': [
-			'error',
-			'tab'
-		],
 		'linebreak-style': [
 			'error',
 			'unix'
