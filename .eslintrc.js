@@ -33,5 +33,15 @@ module.exports = {
 			'error',
 			'always'
 		]
-	}
+	},
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["@Src", "./src"]
+        ],
+        "extensions": [".ts", ".js", ".json"]
+      }
+    }
+  }
 };
