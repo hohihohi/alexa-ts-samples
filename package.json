@@ -2,8 +2,12 @@
   "scripts": {
     "start": "node ./build/index.js",
     "commit": "cz",
+    "fix": "run-s fix:prettier fix:eslint",
     "fix:prettier": "prettier --write 'src/**/*.{js,ts,json}'",
+    "fix:eslint": "eslint src --ext .ts,.tsx --fix",
+    "lint": "run-p lint:prettier lint:eslint",
     "lint:prettier": "prettier --check 'src/**/*.{js,ts,json}'",
+    "lint:eslint": "eslint src --ext .ts,.tsx",
     "build": "tsc",
     "watch": "tsc-watch --onSuccess \"npm start\""
   },
