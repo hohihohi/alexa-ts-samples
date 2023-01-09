@@ -11,7 +11,8 @@
     "build": "tsc",
     "watch": "tsc-watch --onSuccess \"npm start\"",
     "test": "jest",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "pack": "NODE_OPTIONS=--openssl-legacy-provider ncc build src/index.ts --out build/main.js --minify --source-map"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.4.0",
